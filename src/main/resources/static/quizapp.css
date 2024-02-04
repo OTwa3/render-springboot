@@ -1,0 +1,66 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    color: red;
+}
+
+#prompt{
+    display: block;
+}
+
+#scored{
+    display: none;
+    color: black;
+}
+
+#q1{
+    display: block;
+}
+
+#q2{
+    display: none;
+}
+
+#q3{
+    display: none;
+}
+
+#q4{
+    display: none;
+}
+
+#q5{
+    display: none;
+}
+
+#buttons{
+    display: block;
+}
+
+#results{
+    display: none;
+}
+
+#Submit{
+    display: none;
+}
+
+#Previous{
+    display: none;
+}
+
+#Next{
+    display: block;
+}
+
+
+span{
+    color: green;
+}

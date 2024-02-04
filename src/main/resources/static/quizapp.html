@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="quizapp.css">
+    <script src="quizlogic.js"></script>
+    
+</head>
+<body>
+    <h1 id="instructions">Interactive Quiz</h1>
+    <h2 id="prompt">Please select an answer from below and click "Next" to move to the next question or "Previous" to revisit a question.</h2>
+    <section id="q1">
+        <p>Q1: What is 14 + 2?</p>
+        <table>
+            <tr><td>A.</td><td>16</td><td><input type="radio" name="Q1" id="1.A.CORRECT"></td></tr>
+            <tr><td>B.</td><td>18</td><td><input type="radio" name="Q1" id="1.B.INCORRECT"></td></tr>
+            <tr><td>C.</td><td>22</td><td><input type="radio" name="Q1" id="1.C.INCORRECT"></td></tr>
+            <tr><td>D.</td><td>-4</td><td><input type="radio" name="Q1" id="1.D.INCORRECT"></td></tr>
+        </table>
+    </section>
+
+    <section id="q2">
+        <p>Q2: What is 18 + 3?</p>
+        <table>
+            <tr><td>A.</td><td>20</td><td><input type="radio" name="Q2" id="2.A.INCORRECT"></td></tr>
+            <tr><td>B.</td><td>17</td><td><input type="radio" name="Q2" id="2.B.INCORRECT"></td></tr>
+            <tr><td>C.</td><td>21</td><td><input type="radio" name="Q2" id="2.C.CORRECT"></td></tr>
+            <tr><td>D.</td><td>3</td><td><input type="radio" name="Q2" id="2.D.INCORRECT"></td></tr>
+        </table>
+    </section>
+
+    <section id="q3">
+        <p>Q3: What is 2 - 1?</p>
+        <table>
+            <tr><td>A.</td><td>-18</td><td><input type="radio" name="Q3" id="3.A.INCORRECT"></td></tr>
+            <tr><td>B.</td><td>-12</td><td><input type="radio" name="Q3" id="3.B.INCORRECT"></td></tr>
+            <tr><td>C.</td><td>3</td><td><input type="radio" name="Q3" id="3.C.INCORRECT"></td></tr>
+            <tr><td>D.</td><td>1</td><td><input type="radio" name="Q3" id="3.D.CORRECT"></td></tr>
+        </table>
+    </section>
+
+    <section id="q4">
+        <p>Q4: What is 10 + 5?</p>
+        <table>
+            <tr><td>A.</td><td>15</td><td><input type="radio" name="Q4" id="4.A.CORRECT"></td></tr>
+            <tr><td>B.</td><td>2</td><td><input type="radio" name="Q4" id="4.B.INCORRECT"></td></tr>
+            <tr><td>C.</td><td>8</td><td><input type="radio" name="Q4" id="4.C.INCORRECT"></td></tr>
+            <tr><td>D.</td><td>16</td><td><input type="radio" name="Q4" id="4.D.INCORRECT"></td></tr>
+        </table>
+    </section>
+
+    <section id="q5">
+        <p>Q5: What is 8 - 4?</p>
+        <table>
+            <tr><td>A.</td><td>7</td><td><input type="radio" name="Q5" id="5.A.INCORRECT"></td></tr>
+            <tr><td>B.</td><td>4</td><td><input type="radio" name="Q5" id="5.B.CORRECT"></td></tr>
+            <tr><td>C.</td><td>10</td><td><input type="radio" name="Q5" id="5.C.INCORRECT"></td></tr>
+            <tr><td>D.</td><td>6</td><td><input type="radio" name="Q5" id="5.D.INCORRECT"></td></tr>
+        </table>
+    </section>
+
+    <section id="buttons">
+        <button type="submit" id="Previous">Previous</button>
+        <button type="submit" id="Submit">Submit</button>
+        <button type="submit" id="Next">Next</button>
+    </section>
+    
+    
+ 
+<section id="results">
+    <p>Q1: What is 14 + 2?</p>
+        <table>
+            <tr><td>A.</td><td>16</td><td></tr>
+            <tr><td>B.</td><td>18</td><td></tr>
+            <tr><td>C.</td><td>22</td><td></tr>
+            <tr><td>D.</td><td>-4</td><td></tr>
+        </table>
+        <span id="useranswer1"></span>
+        <span id="correctanswer1"></span>
+        
+    <p>Q2: What is 18 + 3?</p>
+        <table>
+            <tr><td>A.</td><td>20</td><td></tr>
+            <tr><td>B.</td><td>17</td><td></tr>
+            <tr><td>C.</td><td>21</td><td></tr>
+            <tr><td>D.</td><td>3</td><td></tr>
+        </table>
+        <span id="useranswer2"></span>
+        <span id="correctanswer2"></span>
+
+    <p>Q3: What is 2 - 1?</p>
+        <table>
+            <tr><td>A.</td><td>-18</td></tr>
+            <tr><td>B.</td><td>-12</td></tr>
+            <tr><td>C.</td><td>3</td></tr>
+            <tr><td>D.</td><td>1</td><td></tr>
+        </table>
+        <span id="useranswer3"></span>
+        <span id="correctanswer3"></span>
+
+    <p>Q4: What is 10 + 5?</p>
+        <table>
+            <tr><td>A.</td><td>15</td><td></tr>
+            <tr><td>B.</td><td>2</td></tr>
+            <tr><td>C.</td><td>8</td></tr>
+            <tr><td>D.</td><td>16</td></tr>
+        </table>
+        <span id="useranswer4"></span>
+        <span id="correctanswer4"></span>
+
+    <p>Q5: What is 8 - 4?</p>
+        <table>
+            <tr><td>A.</td><td>7</td></tr>
+            <tr><td>B.</td><td>4</td></tr>
+            <tr><td>C.</td><td>10</td></tr>
+            <tr><td>D.</td><td>6</td><td></tr>
+        </table>
+        <span id="useranswer5"></span>
+        <span id="correctanswer5"></span>
+    <span id="scored">Your score is: </span>
+
+</section>
+
+
+</body>
+</html>
